@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semantic HTML Master Example</title>
+</head>
+
+<body>
+
+  <!-- Site Header -->
+  <header>
+    <h1>Semantic HTML Mastery</h1>
+    <p><mark>Learn HTML the right way</mark></p>
+
+    <!-- Navigation -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#footer">Footer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Section -->
+    <section id="articles">
+      <header>
+        <h2>Articles Section</h2>
+        <p>Independent and reusable content</p>
+      </header>
+
+      <!-- Article -->
+      <article>
+        <header>
+          <h3>What is Semantic HTML?</h3>
+          <p>
+            Published on 
+            <time datetime="2025-01-01">January 1, 2025</time>
+          </p>
+        </header>
+
+        <p>
+          <strong>Semantic HTML</strong> gives meaning to web content.
+          It improves <em>accessibility</em>, <em>SEO</em>, and maintainability.
+        </p>
+
+        <blockquote cite="https://developer.mozilla.org">
+          <p>
+            Semantic HTML elements clearly describe their meaning to both the browser and the developer.
+          </p>
+        </blockquote>
+
+        <p>
+          Abbreviation example:
+          <abbr title="HyperText Markup Language">HTML</abbr>
+        </p>
+
+        <!-- Figure -->
+        <figure>
+          <img src="semantic.png" alt="Diagram showing semantic HTML layout" />
+          <figcaption>Semantic page structure diagram</figcaption>
+        </figure>
+
+        <footer>
+          <address>
+            Written by <a href="mailto:author@example.com">Web Author</a>
+          </address>
+        </footer>
+      </article>
+
+      <!-- Another Article -->
+      <article>
+        <h3>When to use Section vs Article?</h3>
+
+        <!-- Description List -->
+        <dl>
+          <dt>Article</dt>
+          <dd>Standalone, reusable content</dd>
+
+          <dt>Section</dt>
+          <dd>Thematic grouping of content</dd>
+        </dl>
+      </article>
+    </section>
+
+    <!-- Aside -->
+    <aside>
+      <h2>Related Content</h2>
+      <ul>
+        <li><a href="#">Accessibility Basics</a></li>
+        <li><a href="#">SEO with HTML5</a></li>
+      </ul>
+    </aside>
+
+    <!-- Media Section -->
+    <section id="media">
+      <h2>Media Elements</h2>
+
+      <video controls width="300">
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support video.
+      </video>
+
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+        Your browser does not support audio.
+      </audio>
+    </section>
+
+    <!-- Forms Section -->
+    <section id="forms">
+      <h2>Semantic Form</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>User Information</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <br /><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </nav>
+
+    <p>
+      &copy;
+      <time datetime="2025">2025</time>
+      Semantic HTML Project
+    </p>
+  </footer>
+
+</body>
+</html>
